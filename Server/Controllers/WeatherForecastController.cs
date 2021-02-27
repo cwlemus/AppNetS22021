@@ -1,5 +1,7 @@
+
 ﻿using AppNetS22021.Server.Models;
 using AppNetS22021.Shared;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,33 +11,12 @@ using System.Threading.Tasks;
 
 namespace AppNetS22021.Server.Controllers
 {
-    
 
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-
-        [HttpGet]
-        [Route("api/EjecutarConsulta")]
-        public int EjecutarConsulta()
-        {
-            int resultado = 0;
-            using (RegistroAcademicoContext db = new RegistroAcademicoContext())
-            {
-                Facultad es = new Facultad()
-                {
-                    Nombre = "Facultad de Ciencias y Tecnologias"
-                };
-                db.Facultad.Add(es);
-                db.SaveChanges();
-            }
-            return resultado;
-        }
-
-
-
-        private static readonly string[] Summaries = new[]
+                private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
