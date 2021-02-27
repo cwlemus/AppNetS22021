@@ -1,13 +1,20 @@
 ﻿@page "/counter"
+<<<<<<< HEAD
 @inject HttpClient http 
+=======
+
+>>>>>>> 84c22965cddf28e61af73d9ff963eab5fbffcedf
 <h1>Counter</h1>
 
 <p>Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<<<<<<< HEAD
 <button class="btn btn-primary" @onclick="Persistir"></button>
 
+=======
+>>>>>>> 84c22965cddf28e61af73d9ff963eab5fbffcedf
 @code {
     private int currentCount = 0;
 
@@ -15,10 +22,13 @@
     {
         currentCount++;
     }
+<<<<<<< HEAD
 
     private void Persistir()
     {
         var resultado = http.PostAsync<String>("api/EjecutarConsulta");
     }
 
+=======
+>>>>>>> 84c22965cddf28e61af73d9ff963eab5fbffcedf
 }

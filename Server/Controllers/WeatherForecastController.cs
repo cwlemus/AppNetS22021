@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using AppNetS22021.Server.Models;
 using AppNetS22021.Shared;
+=======
+﻿using AppNetS22021.Shared;
+>>>>>>> 84c22965cddf28e61af73d9ff963eab5fbffcedf
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,12 +13,16 @@ using System.Threading.Tasks;
 
 namespace AppNetS22021.Server.Controllers
 {
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> 84c22965cddf28e61af73d9ff963eab5fbffcedf
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+<<<<<<< HEAD
 
         [HttpGet]
         [Route("api/EjecutarConsulta")]
@@ -35,6 +43,8 @@ namespace AppNetS22021.Server.Controllers
 
 
 
+=======
+>>>>>>> 84c22965cddf28e61af73d9ff963eab5fbffcedf
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
